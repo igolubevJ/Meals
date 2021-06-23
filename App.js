@@ -8,6 +8,7 @@ import {
   Text,
   Platform,
 } from "react-native";
+import { Searchbar } from "react-native-paper";
 
 const isAndroid = Platform.OS === "android";
 
@@ -18,7 +19,7 @@ export default function App() {
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.search}>
-          <Text>search</Text>
+          <Searchbar />
         </View>
         <View style={styles.list}>
           <Text>list</Text>
